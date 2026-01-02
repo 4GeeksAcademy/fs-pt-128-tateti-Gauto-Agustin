@@ -2,10 +2,20 @@ import "bootstrap";
 import "./style.css";
 
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+let startingBoard = ["","","","","","","","",""]
+let actualPlayer = "X"
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+document.querySelectorAll(".grid").forEach(element => {
+  element.addEventListener("click", ()=>{
+    let index = element.getAttribute("data-index")
+    if(startingBoard[index] != "") return
+    startingBoard[index] = actualPlayer
+    element.innerHTML = actualPlayer
+    if (actualPlayer == "X"){
+      actualPlayer = "O"
+    } else {
+      actualPlayer = "X"
+    }
+  })
+})
+
