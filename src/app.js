@@ -16,6 +16,8 @@ document.querySelectorAll(".grid").forEach(element => {
     } else {
       actualPlayer = "X"
     }
+    const textoTurno = document.querySelector(".texto")
+    textoTurno.innerHTML = actualPlayer
   })
 })
 

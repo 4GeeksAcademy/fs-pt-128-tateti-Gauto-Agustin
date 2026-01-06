@@ -1,11 +1,12 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap/dist/css/bootstrap.min.css"; 
+<style>
 
 body {
-    background: white;
+    background: rgb(97, 165, 80);
 }
 
 
-.grid{
+.grid {
     height: 200px;
     width: 200px;
     display: flex;
@@ -13,4 +14,13 @@ body {
     align-items: center;
     border: 1px solid black;
     font-size: 96px;
+}
+
+
+.translate-middle-y{
+    margin-left: 250px;
+}
+
+p {
+    white-space: nowrap;
 }
