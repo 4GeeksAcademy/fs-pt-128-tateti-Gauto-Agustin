@@ -8,46 +8,51 @@
   <title>Ta-Te-Ti</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Bitcount+Grid+Single:wght@100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sekuya&family=Yuji+Boku&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="position-absolute top-50 start-50 translate-middle">
-    <div class="container">
-      <div class="row">
-        <div class="col grid" data-index="0">
-        </div>
-        <div class="col grid" data-index="1">
-        </div>
-        <div class="col grid" data-index="2">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col grid" data-index="3">
-        </div>
-        <div class="col grid" data-index="4">
-        </div>
-        <div class="col grid" data-index="5">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col grid" data-index="6">
-        </div>
-        <div class="col grid" data-index="7">
-        </div>
-        <div class="col grid" data-index="8">
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="fscss" id="status-game">
 
-  <div class="row position-absolute top-50 start-0 translate-middle-y">
-    <P class="col-1 d-flex justify-content-center">Turno de jugador:</P><P class="ms-5 col-2 texto">X</p>
+    <div class="position-absolute top-50 start-50 translate-middle" >
+      <div class="container">
+        <div class="row">
+          <div class="col grid" data-index="0">
+          </div>
+          <div class="col grid" data-index="1">
+          </div>
+          <div class="col grid" data-index="2">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col grid" data-index="3">
+          </div>
+          <div class="col grid" data-index="4">
+          </div>
+          <div class="col grid" data-index="5">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col grid" data-index="6">
+          </div>
+          <div class="col grid" data-index="7">
+          </div>
+          <div class="col grid" data-index="8">
+          </div>
+        </div>
+      </div>
+    </div>  
+    <div class="row position-absolute top-50 start-0 translate-middle-y textoDeTurno">
+      <P class="col-1 d-flex justify-content-center">Turno de jugador:</P><P class="ms-5 col-2 texto">X</p>
+    </div>
   </div>
+  <div><button type="button" id="reset-button" class="btn btn-outline-dark position-absolute top-100 start-50 translate-middle mb-5" onclick="reset()">Reiniciar Juego</button></div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

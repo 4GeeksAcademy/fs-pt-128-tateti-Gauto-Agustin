@@ -1,10 +1,9 @@
-@import "bootstrap/dist/css/bootstrap.min.css"; 
-<style>
+@import "bootstrap/dist/css/bootstrap.min.css";
+
 
 body {
-    background: rgb(97, 165, 80);
+    background: rgb(203, 245, 193);
 }
-
 
 .grid {
     height: 200px;
@@ -14,13 +13,34 @@ body {
     align-items: center;
     border: 1px solid black;
     font-size: 96px;
+    font-family: "Merriweather", serif;
 }
 
 
-.translate-middle-y{
+.translate-middle-y {
     margin-left: 250px;
+}
+
+.textoDeTurno {
+    display: flex;
+    justify-content: space-around;
 }
 
 p {
     white-space: nowrap;
+    font-family: "Merriweather", serif;
+    font-size: 35px;
+}
+
+.ms-5 {
+    margin-right: 50px;
+}
+
+.fscss {
+    font-size: 200px;
+    font-family: "Merriweather", serif;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
 }
