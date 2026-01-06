@@ -35,6 +35,8 @@ function resultWinner() {
 }
 
 
+
+
 document.querySelectorAll(".grid").forEach(element => {
   element.addEventListener("click", () => {
     let index = element.getAttribute("data-index")
@@ -54,12 +56,21 @@ document.querySelectorAll(".grid").forEach(element => {
 })
 
 
-function reset() {
+
+
+   function resetGame() {
     startingBoard = ["", "", "", "", "", "", "", "", ""];
     actualPlayer = "X";
     gameContinue = true;
 
-    
+    document.querySelectorAll(".grid").forEach(grid => {
+        grid.innerHTML = "";
+    });
+
+    document.getElementById("status-game").innerHTML = "";
 }
 
-document.getElementById("reset-button").addEventListener("click", reset);
+
+document.getElementById("reset-button").addEventListener("click", resetGame);
+
+

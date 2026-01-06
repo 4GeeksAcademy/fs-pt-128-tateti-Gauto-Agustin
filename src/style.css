@@ -36,11 +36,20 @@ p {
     margin-right: 50px;
 }
 
-.fscss {
+#status-game{
     font-size: 200px;
     font-family: "Merriweather", serif;
     margin: auto;
     display: flex;
     justify-content: center;
     margin-top: 200px;
+    background-color: black;
+    color: aliceblue;
+    z-index: 200;
 }
+
+
+/* .btn{
+    margin-top: 15px;
+    margin: auto;
+} */
